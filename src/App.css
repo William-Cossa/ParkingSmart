@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary-color: #4460f1;
+  --white-color:#fff;
+
+  --light-text-color:#9398b3;
+  --light-bg-color:#f2f4ff;
+  --dark-color:#333;
+
+  --background-color:#fcfcff;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.main{
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+input::placeholder{
+  color: var(--dark-color);
+  font-family: 'Poppins','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: inherit;
+  font-weight: 300;
+  
+}
+form input:not(.submit){
+  background-color: var(--light-bg-color);
+}
+.submit{
+  width: 100%;
+  padding:1rem 1rem;
+  font-weight:500;
+  /* background-color: var(--primary-color); */
+  background-color: #23777a;
+  box-shadow: orange 0 20px 30px -10px;
+  cursor: pointer;
+  transition: box-shadow .3s;
+}
+.submit:hover{
+  box-shadow: rgb(0, 255, 0) 0 10px 30px -10px;
+}
